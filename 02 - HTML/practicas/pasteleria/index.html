@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pasteleria practica HTML5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
     <style>
       * {
         padding: 0;
@@ -13,6 +19,7 @@
       }
       body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: center/30% url(assets/img/albondigo.png) no-repeat;
       }
       h1,
       h2 {
@@ -33,7 +40,7 @@
       }
 
       footer {
-        font-size: 9px;
+        font-size: 10px;
         padding: 20px;
         margin: 10px;
       }
@@ -42,6 +49,11 @@
   <body>
     <header>
       <h1>Pasteleria! Chef Albondigo 😺</h1>
+      <nav class="nav nav-tabs nav-stacked">
+        <a class="nav-link active" href="#">Has tu pedido</a>
+        <a class="nav-link" href="pastelero.html">Pastelero</a>
+        <a class="nav-link disabled" href="#">Contactanos</a>
+      </nav>
     </header>
     <main>
       <section>
@@ -85,11 +97,15 @@
             <li>
               <label for="fondant">Fondant: </label>
               <br />
+              <span>$300 pesos</span><br />
+              <br />
               <input type="checkbox" id="fondant" name="fondant" />
-              <br /><br />
+              <br />
             </li>
             <li>
               <label for="tres-leches">Tres Leches: </label>
+              <br />
+              <span>$250 pesos</span><br />
               <br />
               <input type="checkbox" id="tres-leches" name="tres-leches" />
               <br /><br />
@@ -97,16 +113,72 @@
             <li>
               <label for="crema-batida">Crema Batida: </label>
               <br />
+              <span>$200 pesos</span><br />
+              <br />
               <input type="checkbox" name="crema-batida" id="crema-batida" />
               <br /><br />
             </li>
           </ul>
         </nav>
       </section>
+      <section class="ingredientes">
+        <h2>Adornos!</h2>
+        <nav>
+          <ul>
+            <li>
+              <label for="velas">Velas: </label>
+              <br />
+              <span>$100 pesos</span><br />
+              <br />
+              <input type="checkbox" id="velas" name="velas" />
+              <br />
+            </li>
+            <li>
+              <label for="felicidades">Letrero Felicidades: </label>
+              <br />
+              <span>$150 pesos</span><br />
+              <br />
+              <input type="checkbox" id="felicidades" name="felicidades" />
+              <br /><br />
+            </li>
+            <li>
+              <label for="graduacion">Vela graduación: </label>
+              <br />
+              <span>$200 pesos</span><br />
+              <br />
+              <input type="checkbox" name="graduacion" id="graduacion" />
+              <br /><br />
+            </li>
+          </ul>
+        </nav>
+      </section>
       <footer>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Dirección</th>
+              <th>Teléfono</th>
+              <th>Horarios de Atención</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">
+                Calle #3, CP 11333, Col. Caramelo, Delegación: Miguel Hidalgo, CDMX
+              </td>
+              <td>5544554455</td>
+              <td>de Lunes a Sabado de 9:00am a 7:00pm</td>
+            </tr>
+            <tr>
+              <td scope="row"></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempore
-          corrupti.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid corporis
+          deleniti placeat?
         </p>
       </footer>
     </main>
