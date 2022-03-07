@@ -5,21 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pasteleria practica HTML5</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      h1,
+      h2 {
+        text-align: left;
+        padding: 40px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+      }
+      p,
+      input {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-left: 10px;
+      }
+      .ingredientes nav ul {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      footer {
+        font-size: 9px;
+        padding: 20px;
+        margin: 10px;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1>Pasteleria!</h1>
+      <h1>Pasteleria! Chef Albondigo 😺</h1>
     </header>
     <main>
       <section>
         <h2>Bienvenidos!</h2>
+        <h2>Ingresa tus datos de contacto:</h2>
+        <nav>
+          <ul>
+            <li>
+              <label for="nombre">Nombre: </label>
+              <input type="text" id="nombre" name="nombre" />
+              <br /><br />
+            </li>
+            <li>
+              <label for="correo">Correo: </label>
+              <input type="email" id="correo" name="correo" />
+              <br /><br />
+            </li>
+            <li>
+              <label for="telefono">Telefono: </label>
+              <input type="tel" name="telefono" id="telefono" />
+              <br /><br />
+            </li>
+            <li>
+              <label for="descripcion">Descripcion del Pastel: </label>
+              <br />
+              <input
+                type=""
+                name="descripcion"
+                id="descripcion"
+                style="width: 400px; height: 100px"
+              />
+              <br /><br />
+            </li>
+          </ul>
+        </nav>
       </section>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor pariatur
-        nesciunt ipsum tempora nobis quisquam adipisci vitae veritatis ipsa! Numquam
-        labore temporibus incidunt reiciendis cumque ratione non nulla atque!
-        Reprehenderit!
-      </p>
+      <section class="ingredientes">
+        <h2>Ingredientes!</h2>
+        <nav>
+          <ul>
+            <li>
+              <label for="fondant">Fondant: </label>
+              <br />
+              <input type="checkbox" id="fondant" name="fondant" />
+              <br /><br />
+            </li>
+            <li>
+              <label for="tres-leches">Tres Leches: </label>
+              <br />
+              <input type="checkbox" id="tres-leches" name="tres-leches" />
+              <br /><br />
+            </li>
+            <li>
+              <label for="crema-batida">Crema Batida: </label>
+              <br />
+              <input type="checkbox" name="crema-batida" id="crema-batida" />
+              <br /><br />
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <footer>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, tempore
+          corrupti.
+        </p>
+      </footer>
     </main>
   </body>
 </html>
