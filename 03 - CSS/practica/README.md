@@ -15,9 +15,10 @@ La práctica consiste en lo siguiente:
 - Estilos con CSS (Lo más acercado posible, pueden ser otras imágenes, íconos o colores, pero tiene que ser lo más cercano que puedas)
 
 Bonus:
+
 - Bonus de diseños o páginas adicionales (Totalmente a tu creatividad)
-- Bonus de despliegue de la página 
+- Bonus de despliegue de la página
 
-## El 11 de Marzo se subirá el Form para que entreguen las prácticas y tienen hasta el 13 de Marzo a las 12:00 de la noche para entregarlas. 
-***¡Vámonos hasta el espacio y más allá Explorers!***
+## El 11 de Marzo se subirá el Form para que entreguen las prácticas y tienen hasta el 13 de Marzo a las 12:00 de la noche para entregarlas.
 
+**_¡Vámonos hasta el espacio y más allá Explorers!_**
